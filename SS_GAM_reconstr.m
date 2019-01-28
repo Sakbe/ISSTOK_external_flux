@@ -15,8 +15,18 @@ shot_prim=data;
 load('shot_45379.mat');
 shot_sum=data;
 
-time=1e-6*data.time;
+
 
 %% Plots
 
 figure(1)
+for i=1:12
+subplot(3,4,i)
+plot(1e-6*shot_hor.time,shot_hor.mirnv_corr(i,:),'LineWidth',2)
+hold on
+plot(1e-6*shot_hor.time,shot_hor.ext_flux(i,:),'-.','LineWidth',2)
+grid on
+end
+
+
+

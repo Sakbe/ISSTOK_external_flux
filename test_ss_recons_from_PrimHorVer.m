@@ -1,8 +1,7 @@
 close all
 clear all
 
-
-shot= 'shot_44503.mat'; 
+shot= 'shot_45374.mat'; 
 load(shot);
 time_sec=1e-6*data.time(11:end);
 time_step=-time_sec(1)+time_sec(2);
@@ -18,6 +17,8 @@ end
 for i=1:12
     output(i,:)=1*double(data.mirnv_corr(i,(11:end)));
 end
+
+
 
 %% Lets estimate the prim
 filename = 'ss_mirn_prim.mat'; 
