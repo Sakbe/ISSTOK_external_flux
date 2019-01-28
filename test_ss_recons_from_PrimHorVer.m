@@ -1,4 +1,4 @@
-close all
+% close all
 clear all
 
 shot= 'shot_45374.mat'; 
